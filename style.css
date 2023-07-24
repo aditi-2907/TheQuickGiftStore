@@ -219,7 +219,8 @@ span {
 .hero-section {
     background-image: url(2.png);
     height: 350px;
-    background-size: cover;
+    background-size:cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -377,7 +378,7 @@ ul a {
 }
 
 .logo {
-    background-image: url("amazon_logo.png");
+    background-image: url("logo.png");
     background-size: cover;
     height: 40px;
     width: 80px;
@@ -414,3 +415,44 @@ ul a {
     font-size: 0.7rem;
     padding-top: 5px;
 }
+
+/* @media only screen and (max-width: 1000px){
+    .box{
+        align-content: center;
+        width:600px;
+    }
+} */
+
+@media only screen and (max-width: 700px) {
+    .logo1{
+        display: none;
+    }
+    .nav-address-border{
+        display: none;
+    }
+    .search-input{
+        width: 50%;
+    }
+    .box{
+        align-content: center;
+        width:450px;
+    }
+    .hero-section {
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    /* .box9.box-img{
+        width:450px;
+    } */
+    .box10.box-img{
+        display:none;
+    }
+    .box11.box-img{
+        display:none;
+    }
+    .box12.box-img{
+        display:none;
+    }
+}
+
